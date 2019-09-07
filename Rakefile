@@ -15,7 +15,7 @@ task :armhf do
 end
 
 task :manifest do
-  sh "docker manifest create --amed unvt/ango:latest \
+  sh "docker manifest create --amend unvt/ango:latest \
     unvt/ango:armhf unvt/ango:amd64"
-  sh "docker manifest push unvt:ango:latest"
+  sh "docker manifest push unvt/ango:latest"
 end
